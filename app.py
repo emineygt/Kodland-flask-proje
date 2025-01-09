@@ -4,7 +4,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-# Veritabanı URI'yi MySQL için güncelledik
+
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:12345678@localhost/exam'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
